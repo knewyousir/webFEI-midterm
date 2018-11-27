@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webFEI-MIDTERM</title>
+    <base href="/">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="/js/bundle.js"></script>
+</head>
+<body>
+    <h1>User editor</h1>
+    <h2>Add a user:</h2>
+    <form action="/api/add" method='POST' >
+        <input type="text" placeholder="username" name="username" />
+        <input type="text" placeholder="password" name="password" />
+        <input type="text" placeholder="first name" name="first_name" />
+        <input type="text" placeholder="last name" name="last_name" />
+        <button type="submit">Submit</button>
+    </form>
+    <br>
+
+    <h2>Refresh users:</h2>
+    <form action="/" method="GET">
+        <button>Refresh</button>
+    </form>
+    <br>
+
+    <h2>User list:</h2>
+
+    <div ng-app="app">
+        <div ng-view></div>
+    </div>
+
+</body>
+    <!-- <body ng-app="app">
+        <div>
+          <recipe-list></recipe-list>
+        </div>
+    </body> -->
+    
+</html>

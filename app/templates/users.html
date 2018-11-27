@@ -1,0 +1,16 @@
+<div class="wrap">
+  <h2>Users</h2>
+  
+  <ul class="users">
+    <li ng-repeat="user in users" class="fade">
+      <h2>User: {{ user.username }}</h2>
+      <ul class="details">
+        <li>First name: {{ user.first_name }}</p>
+        <li>Last name: {{ user.last_name }}</p>
+        <li>Username: {{ user.username }}</p>
+        <li>Password: {{ user.password }}</p>
+      </ul>
+      <span ng-click="deleteUser(index, user._id)">✖</span>
+    </li>
+  </ul>
+</div>
